@@ -1,4 +1,6 @@
 // Portfolio content is maintained locally for the standalone site.
+const publicUrl = (path) => `${import.meta.env.BASE_URL}${path}`;
+
 export const sampleProfile = {
   name: 'Jacob Paulson',
   role_line: 'Sound Designer — Adaptive Audio & Game SFX',
@@ -9,7 +11,7 @@ export const sampleProfile = {
     'As a musician and Berklee College of Music graduate, music has always impacted my experiences. But music that dynamically responds to player choices is where game music becomes magic. I design adaptive music systems and high quality sound design assets. Focusing on easily implementable solutions, I build cues as systems — stems, states and transitions — so the player experience is always dynamic.',
   location: 'Los Angeles, CA',
   email: 'jrpgaudio@gmail.com',
-  about_photo_url: 'public/media/ProfilePic.JPG',
+  about_photo_url: publicUrl('media/ProfilePic.JPG'),
   links: [],
   resume_url: null,
 };
@@ -95,28 +97,28 @@ export const sampleMix = {
       label: 'Atmosphere',
       hint: 'Horns · pads · bells',
       default_level: 0.8,
-      audio_url: '/media/IceCaves_Layer 1.mp3',
+      audio_url: publicUrl('media/IceCaves_Layer 1.mp3'),
     },
     {
       id: 's2',
       label: 'Pulse',
       hint: 'Counter Melody · bells',
       default_level: 0.35,
-      audio_url: '/media/IceCaves_Layer 2.mp3',
+      audio_url: publicUrl('media/IceCaves_Layer 2.mp3'),
     },
     {
       id: 's3',
       label: 'Discovery',
       hint: 'Strings swell',
       default_level: 0.2,
-      audio_url: '/media/IceCaves_Layer 3.mp3',
+      audio_url: publicUrl('media/IceCaves_Layer 3.mp3'),
     },
     {
       id: 's4',
       label: 'Intensity',
       hint: 'Drums · percussion',
       default_level: 0.1,
-      audio_url: '/media/IceCaves_Layer 4.mp3',
+      audio_url: publicUrl('media/IceCaves_Layer 4.mp3'),
     },
   ],
   presets: [

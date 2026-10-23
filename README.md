@@ -24,6 +24,14 @@ Deploy the generated `dist/` directory to any static web host. Configure the
 host to serve `index.html` for unknown routes so client-side routes continue to
 work.
 
+## Deploy to GitHub Pages
+
+The included GitHub Actions workflow builds and deploys the site when changes
+are pushed to `main` or `master`. In the repository settings, open **Pages**
+and set the build and deployment source to **GitHub Actions**. The workflow
+automatically uses the repository subpath for project sites and the root path
+for `owner.github.io` sites.
+
 ## Update the portfolio
 
 Edit the profile, videos, audio clips, and mixer stems in

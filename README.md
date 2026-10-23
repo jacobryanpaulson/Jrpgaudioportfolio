@@ -30,7 +30,7 @@ The included GitHub Actions workflow builds and deploys the site when changes
 are pushed to `main` or `master`. In the repository settings, open **Pages**
 and set the build and deployment source to **GitHub Actions**. The workflow
 automatically uses the repository subpath for project sites and the root path
-for `owner.github.io` sites.
+for `owner.github.io` sites or repositories with a `CNAME` custom domain.
 
 ## Update the portfolio
 
